@@ -1,4 +1,4 @@
-# TICU: Trigger-Invariant Clean Unlearning for Backdoor Defense
+# Trigger-Invariant Counterfactual Unlearning for Robust Backdoor Removal
 
 ![Backdoor](fig/ticu_arch.png)
 
@@ -175,18 +175,6 @@ If you see a CUDA device mismatch error on a multi-GPU server, run with a single
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python3 ticu_universal.py ...
-```
-
-If `nvidia-smi` shows a driver/library mismatch, reboot the system first:
-
-```bash
-sudo reboot
-```
-
-Then check again:
-
-```bash
-nvidia-smi
 ```
 
 For LoRA models, make sure the following helper files are available:
